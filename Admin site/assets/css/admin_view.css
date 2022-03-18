@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.col{
+    float: left;
+}
+.col-three{
+    width: 33.33333%;
+}
+.col-two{
+    width: 50%;
+}
+#header{
+    background-color: #2D3748;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 80px;
+}
+.heading-img{
+    width: 46px;
+    height: 46px;
+    clip-path: circle(50%);
+    right: 0;
+    margin: 15px;
+    position: fixed;
+    z-index: 1;
+}
+
+
+#content #navigation-side{
+    position: relative;
+    background-color: #EDF2F7;
+    position: absolute;
+    width: 300px;
+    height: 800px;
+    left: 0px;
+    top: 80px;   
+}
+
+#content #navigation-side #navigation-box{
+    position: absolute;
+    max-width: 300px;
+    height: 596px;
+    top: 72px;
+    font-family: 'Roboto';
+}
+
+#navigation-side .manage{
+    padding-left: 72px;
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    color: #4299E1;
+}
+.manage-account{
+    margin-top: 36px;
+    font-size: 18px;
+    right: 72px;
+}
+.manage-account li{
+    list-style: none;
+    margin-top: 8px;
+    width: 300px;
+}
+
+.manage-account li a{
+    text-decoration: none;  
+    display: block;
+    line-height: 46px;
+    padding-left: 72px;
+    color: #2C5282;
+}
+.manage-account li:hover{
+    background: rgba(0, 0, 0, 0.19);   
+}
+.manage-account i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#view-site{
+    
+}
+#toolbar{
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    width: 1150px;
+    height: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+.toolbar-document{
+    line-height: 20px;
+    color: #8F8F8F;
+}
+.toolbar-filter{
+    margin-right: 8px;
+    margin-left: 580px;
+    font-size: 14px;
+    color: #000000;
+    width: 45px;
+}
+.vertical-line{
+    width: 1.5px; 
+    background-color: #D5D6D6; 
+    height: 20px; 
+    float: left; 
+
+}
+.toolbar-sort{
+    margin-left: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    width: 120px;
+    color: #000000;
+    border: none;
+}
+.toolbar-sort:hover{
+    cursor: pointer;
+}
+
+.document-info{
+    position: absolute;
+    top: 150px;
+    left: 320px;;
+
+}
+.block{
+    margin-top: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+
+}
+.title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+}
+.content{
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    width: 746px;
+    height: 116px;
+}
+.author{
+
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125.3%;
+    color: rgba(28, 46, 69, 0.6);
+}
+.icon{
+    float: left; 
+    width: 25px;
+    color: rgba(26, 41, 61, 0.83);
+    font-weight: 900;
+}
+.day{
+    margin-top: 10px;
+}
+.download{
+    margin-top: 20px;
+    margin-left: 420px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 150px;
+    height: 33px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+}
+.view{
+    margin-top: 10px;
+    margin-left: 420px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 150px;
+    height: 33px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+}
+.download,
+.view:hover{
+    cursor: pointer;
+}
+.type{
+    margin: 20px 65px 0 390px ;
+}
+.number{
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.hr-line{
+    display: inline-block;
+
+    background-color: #000000;
+    height: 0px;
+    left: 322.03px;
+    top: 342px;
+    border: 1px solid #000000;
+
+}

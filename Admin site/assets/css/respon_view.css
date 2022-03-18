@@ -1,0 +1,155 @@
+.toggle{
+    color: #fff;
+    font-size: 40px;
+    padding: 14px 20px;
+    display: none;
+
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    width: 320px;
+    min-width: 100%;
+    transform: translateX(-100%);
+}
+.nav-mobile-list{
+    margin-top: 80px;
+    /* margin-left: 40px; */
+    list-style: none;
+}
+
+.nav-mobile-list .nav-mobile-link{
+    margin-left: 40px;
+}
+.nav-mobile-link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 4px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.nav-mobile-list li a{
+    color: #007bff;
+    text-decoration: none;
+}
+.nav-mobile-list li a i{list-style: none;}
+.close-btn{
+    font-size: 1.8rem;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .nav-overlay{
+    display: block;
+}
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%);
+}
+
+@media (max-width: 1023px) and (min-width: 740px){
+    .toggle{
+        display: block;
+    }
+    #navigation-side{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .heading-img{
+        display: none;
+    }
+    #toolbar{
+        left: 20px;
+        width: 746px;
+    }
+    .toolbar-filter{
+        margin-left: 290px;
+    }
+    .document-info{
+        left: 20px;
+    }
+    .m-full-width{
+        width: 100%;
+    }
+    .ml-120{
+        margin-left: 120px;
+        width: 585px;
+    }
+}
+
+@media (max-width: 740px){
+    .toggle{
+        display: block;
+    }
+    #navigation-side{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .heading-img{
+        display: none;
+    }
+    #toolbar{
+        left: 20px;
+        width: 390px;
+    }
+    .toolbar-document{
+        width: 100px;
+    }
+    .toolbar-filter{
+        margin-left: 100px;
+    }
+    .title{
+        width: 400px;
+    }
+    .document-info{
+        left: 20px;
+        width: 400px;
+    }
+    .content{
+        width: 400px;
+        height: 200px;
+        font-size: 15px;
+    }
+    .author{
+        width: 400px;
+    }
+    .m-full-width{
+        width: 100%;
+    }
+    .ml-120{
+        width: 400px;
+        left: 0;
+    }
+    .ml-200{
+        margin-left: 200px !important;
+    }
+    .download{
+        margin-left: 200px;
+    }
+    .view{
+        margin-left: 200px;
+    }
+    .type{
+        margin-left: 180px;
+    }
+}   
+    

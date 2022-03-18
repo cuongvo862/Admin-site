@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-color: #2D3748;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 80px;
+    /* width: 100%;
+    height: 80px; */
+}
+.heading-img{
+    width: 46px;
+    height: 46px;
+    clip-path: circle(50%);
+    right: 0;
+    margin: 15px;
+    position: fixed;
+    z-index: 1;
+}
+#content #navigation-side{
+    position: relative;
+    background-color: #EDF2F7;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    left: 0px;
+    top: 80px;   
+}
+
+#content #navigation-side #navigation-box{
+    position: absolute;
+    max-width: 300px;
+    height: 596px;
+    top: 72px;
+    font-family: 'Roboto';
+}
+
+#navigation-side .manage{
+    padding-left: 72px;
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    color: #4299E1;
+}
+.manage-account{
+    margin-top: 36px;
+    font-size: 18px;
+    right: 72px;
+}
+.manage-account li{
+    list-style: none;
+    margin-top: 8px;
+    width: 300px;
+}
+
+.manage-account li a{
+    text-decoration: none;  
+    display: block;
+    line-height: 46px;
+    padding-left: 72px;
+    color: #2C5282;
+}
+.manage-account li:hover{
+    background: rgba(0, 0, 0, 0.19);   
+}
+.manage-account i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+#register-site{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: 125px;
+    left: 50%;
+    font-family: 'Inter';
+}
+#register-site:hover{
+    border-radius: 10px;
+    border: 2px solid #6066FF;
+}
+#register-site .register-heading{
+    font-size: 44px;
+    color:#252EFF;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 53px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 36px;
+}
+.register-form{
+    width: 352px;
+    height: 42px;
+    margin: 0 24px;
+}
+.register-form .form-control{
+    display: inline-block;
+    width: 100%;
+    height: 42px;
+    left: 688px;
+    top: 283px;
+    margin-bottom: 18px;
+    border: 2px solid #6066FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.radio-input{
+    border: 2px solid #6066FF; 
+    box-sizing: border-box; 
+    border-radius: 10px; 
+}
+.register-btn{
+    width: 352px;
+    height: 42px;
+    left: 689px;
+    top: 656px;
+    color: #fff;
+    background: #252EFF;
+    border-radius: 20px;
+    text-align: center;
+}
+.register-btn:hover{
+    border: 3px solid #66FFFF;
+    cursor: pointer;
+}

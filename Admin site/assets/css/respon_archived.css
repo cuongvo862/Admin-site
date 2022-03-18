@@ -1,0 +1,175 @@
+.toggle{
+    color: #fff;
+    font-size: 40px;
+    padding: 14px 20px;
+    display: none;
+
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    width: 320px;
+    min-width: 100%;
+    transform: translateX(-100%);
+}
+.nav-mobile-list{
+    margin-top: 80px;
+    /* margin-left: 40px; */
+    list-style: none;
+}
+
+.nav-mobile-list .nav-mobile-link{
+    margin-left: 40px;
+}
+.nav-mobile-link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 4px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.nav-mobile-list li a{
+    color: #007bff;
+    text-decoration: none;
+}
+.nav-mobile-list li a i{list-style: none;}
+.close-btn{
+    font-size: 1.8rem;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+.nav-input{
+    display: none;
+}
+.nav-input:checked ~ .nav-overlay{
+    display: block;
+}
+.nav-input:checked ~ .nav-mobile{
+    transform: translateX(0%);
+}
+@media (max-width: 1023px) and (min-width: 740px){
+    .toggle{
+        display: block;
+    }
+    #navigation-side{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .heading-img{
+        display: none;
+    }
+    #search-box{
+        left: 10px;
+    }
+    #archived-page-site{
+        left: 5px;
+    }
+    .block{
+        width: 760px;
+    }
+    .book-author{
+        width: 250px;
+    }
+    .title-page{
+        font-size: 18px;
+        width: 200px;
+    }
+    .condition{
+        margin: 0 0 0 30px;
+        width: 80px;
+        
+    }
+    .number-of-views{
+        width: 200px;
+    }
+    .number{
+        padding-left: 80px;
+    }
+    .date{
+        padding-left: 30px;
+        width: 200px;
+    }
+    .more-btn{
+        float: right;
+    }
+    .container{
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 740px){
+    .toggle{
+        display: block;
+    }
+    #navigation-side{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .heading-img{
+        display: none;
+    }
+    #search-box{
+        left: 30px;
+    }
+    #archived-page-site{
+        left: 5px;
+    }
+    .block{
+        width: 400px;
+        height: 150px;
+    }
+    .book-author{
+        width: 100%;
+        text-align: center;
+    }
+    .title-page{
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+    .condition{
+        margin: 18px 0 0 10px;
+        width: 80px;
+        display: block;
+    }
+    .number-of-views{
+        margin-top: 20px;
+        width: 200px;
+    }
+    .number{
+        padding-left: 80px;
+    }
+    .date{
+        padding-left: 30px;
+        width: 200px;
+    }
+    .more-btn{
+        margin-top: 20px;
+        float: right;
+    }
+    .container{
+        position: absolute;
+        margin-top: 1000px;
+        margin-left: 150px;
+    }
+
+}   
+   

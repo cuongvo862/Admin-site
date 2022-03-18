@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin View</title>
+    <link rel="stylesheet" href="./assets/css/admin_view.css">
+    <link rel="stylesheet" href="./assets/css/respon_view.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <label for="nav-mobile-input" class="toggle">
+                <i class="ti-menu"></i> 
+            </label>
+
+            <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+
+            <label for="nav-mobile-input" class="nav-overlay"></label>
+
+            <nav class="nav-mobile">
+
+                    <label for="nav-mobile-input" class="close-btn">
+                        <i class="ti-close"></i>
+                    </label>
+                    <ul class="nav-mobile-list">
+                        <li style="background: #fff">       
+                            <a href="">
+                                <i class="nav-mobile-link ti-home"></i>View site</a>
+                        </li>
+                        <li>
+                            <a href="/document.html">
+                                <i class="nav-mobile-link ti-file"></i>Documents</a>
+                        </li>
+                        <li>
+                            <a href="/admin_user.html">
+                                <i class="nav-mobile-link ti-user"></i>Users</a>
+                        </li>
+                        <li>
+                            <a href="/archived_page.html">
+                                <i class="nav-mobile-link ti-trash"></i>Archived pages</a>
+                        </li>
+                        <li>
+                            <a href="/admin_register.html">
+                                <i class="nav-mobile-link ti-plus"></i>Create account</a>
+                        </li>
+                        <li>       
+                            <a href="#">
+                                <i class="nav-mobile-link ti-user"></i>Staff</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="nav-mobile-link ti-user"></i>QAM</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="nav-mobile-link ti-user"></i>QAC</a>
+                        </li>
+                    </ul>
+            </nav>
+            <img src="./assets/img/user-image.jpg" alt="" class="heading-img">
+        </div>
+
+        <div id="content">
+            <div id="navigation-side">
+                <div id="navigation-box">
+                    <h2 class="manage">Manage</h2>
+                    <ul class="manage-account">
+                        <li  style="background: rgba(0, 0, 0, 0.19);">       
+                            <a href="">
+                                <i class="icon-navigation ti-home"></i>View site</a>
+                        </li>  
+                        <li>
+                            <a href="/document.html">
+                                <i class="icon-navigation ti-file"></i>Documents</a>
+                        </li>
+                        <li>
+                            <a href="/admin_user.html">
+                                <i class="icon-navigation ti-user"></i>Users</a>
+                        </li>
+                        <li>
+                            <a href="/archived_page.html">
+                                <i class="icon-navigation ti-trash"></i>Archived pages</a>
+                        </li>
+                        <li>
+                            <a href="/admin_register.html">
+                                <i class="icon-navigation ti-plus"></i>Create account</a>
+                        </li>
+                        <li>       
+                            <a href="#">
+                                <i class="icon-navigation ti-user"></i>Staff</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-navigation ti-user"></i>QAM</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-navigation ti-user"></i>QAC</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="view-site">
+                <div id="toolbar">
+                    <div class="toolbar-document col col-three">Documents</div>
+                    <div class="toolbar-filter col col-three">Filter</div>
+                    <div class="vertical-line"></div>
+                    <select class="toolbar-sort" onchange="getSelectValue();">
+                        <option value="lastest">Sort by latest</option>
+                        <option value="oldest">Sort by oldest</option>
+                    </select>
+               
+                </div>
+                <div class="document-info">
+                    <div class="block">
+                        <div class="m-full-width col-left col col-two">
+                            <h1 class="title">Title Post 1</h1>
+                            <p class="content">Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispamNemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam </p>
+                            <p class="author">Ngo Tien Dung - 28 Feb, 2022</p>
+                        </div>
+                        <div class="ml-120 m-full-width col col-two">
+                            <div class="day">
+                                <i style="margin-left: 400px;" class="ti-layout-tab-window icon ml-200"></i>
+                                <p class="day">22-01-22 to 22-02-22</p>
+                            </div>
+                            <button class="download">Download</button>
+                            <button class="view">View</button>
+                            <div class="type col">
+                                <i class="add-icon ti-target icon"></i>
+                                <span class="">Book</span>
+                            </div>
+                            <div class="number">
+                                <i class="add-icon ti-user icon"></i>
+                                <span class="">1234</span>
+                            </div>
+                        </div>
+                        <hr class="hr-line" width="100%"  align="center" />
+                    </div>
+
+                    <div class="block">
+                        <div class="m-full-width col-left col col-two">
+                            <h1 class="title">Title Post 1</h1>
+                            <p class="content">Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispamNemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam </p>
+                            <p class="author">Ngo Tien Dung - 28 Feb, 2022</p>
+                        </div>
+                        <div class="ml-120 m-full-width col-right col col-two">
+                            <div class="day">
+                                <i style="margin-left: 400px;" class="ti-layout-tab-window icon ml-200"></i>
+                                <p class="day">22-01-22 to 22-02-22</p>
+                            </div>
+                            <button class="download">Download</button>
+                            <button class="view">View</button>
+                            <div class="type col">
+                                <i class="add-icon ti-target icon"></i>
+                                <span class="">Book</span>
+                            </div>
+                            <div class="number">
+                                <i class="add-icon ti-user icon"></i>
+                                <span class="">1234</span>
+                            </div>
+                        </div>
+                        <hr class="hr-line" width="100%"  align="center" />
+                    </div>
+                    <div class="block">
+                        <div class="m-full-width col-left col col-two">
+                            <h1 class="title">Title Post 1</h1>
+                            <p class="content">Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispamNemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam Nemo enim ispam </p>
+                            <p class="author">Ngo Tien Dung - 28 Feb, 2022</p>
+                        </div>
+                        <div class="ml-120 m-full-width col-right col col-two">
+                            <div class="day">
+                                <i style="margin-left: 400px;" class="ti-layout-tab-window icon ml-200"></i>
+                                <p class="day">22-01-22 to 22-02-22</p>
+                            </div>
+                            <button class="download">Download</button>
+                            <button class="view">View</button>
+                            <div class="type col">
+                                <i class="add-icon ti-target icon"></i>
+                                <span class="">Book</span>
+                            </div>
+                            <div class="number">
+                                <i class="add-icon ti-user icon"></i>
+                                <span class="">1234</span>
+                            </div>
+                        </div>
+                        <hr class="hr-line" width="100%"  align="center" />
+                    </div>
+                </div>
+                
+                
+              
+            </div>
+        </div>
+    </div>
+    <script>
+    
+        function getSelectValue()
+        {
+            var selectedValue = document.getElementById("list-sort").value;
+            console.log(selectedValue);
+        }
+        getSelectValue();
+    
+    </script>
+</body>
+</html>

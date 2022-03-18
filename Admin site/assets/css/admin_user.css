@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: #2D3748;
+    width: 100%;
+    height: 80px;
+}
+.heading-img{
+    width: 46px;
+    height: 46px;
+    clip-path: circle(50%);
+    float: right;
+    margin: 15px;
+}
+
+#content #navigation-side{
+    position: relative;
+    background-color: #EDF2F7;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    left: 0px;
+    top: 80px;   
+}
+
+#content #navigation-side #navigation-box{
+    position: absolute;
+    max-width: 300px;
+    height: 596px;
+    top: 72px;
+    font-family: 'Roboto';
+}
+
+#navigation-side .manage{
+    padding-left: 72px;
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    color: #4299E1;
+}
+.manage-account{
+    margin-top: 36px;
+    font-size: 18px;
+    right: 72px;
+}
+.manage-account li{
+    list-style: none;
+    margin-top: 8px;
+    width: 300px;
+}
+
+.manage-account li a{
+    text-decoration: none;  
+    display: block;
+    line-height: 46px;
+    padding-left: 72px;
+    color: #2C5282;
+}
+.manage-account li:hover{
+    background: rgba(0, 0, 0, 0.19);   
+}
+.manage-account i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+    font-size: 18px;
+}
+#search-box{
+    left: 320px;
+    top: 24px;
+    position: relative;
+    width: 350px;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+}
+#search-box .search-text{
+    position: absolute;
+    border: none;
+    width: 320px;
+    height: auto;
+    left: 16px;
+    top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    outline: 0;
+}
+#search-box .search-icon{
+    float: right;
+    width: 24px;
+    line-height: 46px;
+    left: 300px;
+    top: 3px;
+    margin: 0px 10px;
+    font-size: 24px;
+    color: #ccc;
+    position: absolute;
+}
+#user-file{
+    margin: 50px 0 0 320px;
+}
+#user-file .user-card{
+    /* position: absolute; */
+    float: left;
+    margin-right: 44px;
+    width: 288px;
+    height: 425px;
+    left: 316px;
+    top: 189px;
+    background: #FFFFFF;
+    border: 1.29356px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 6.46779px;
+}
+.user-img{
+    position: absolute;
+    width: 192px;
+    height: 192px;
+    clip-path: circle(50%);
+    margin: 40px 47px 180px;
+    box-sizing: border-box;
+}
+#user-file .place-body{
+    padding-top: 280px;
+}
+.name{
+    text-align: center;
+    height: 31.05px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.1098px;
+    line-height: 31px;
+    letter-spacing: 0.258711px;
+    color: #737373;
+    border:none
+}
+.view-btn, .role, .delete-btn{
+    margin-left: 12px;
+}
+.view-btn{
+    background-color: #fff;
+    height: 31.05px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.258711px;
+    color: #2091F9;
+    border:none
+}
+.delete-btn{
+    background-color: #fff;
+    height: 31.05px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.1098px;
+    line-height: 31px;
+    letter-spacing: 0.258711px;
+    color: #FF0000;
+    border:none
+}
+.role{
+    background-color: #fff;
+    height: 31.05px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.1098px;
+    line-height: 31px;
+    letter-spacing: 0.258711px;
+    color: #252B42;
+    border:none
+}
+.view-btn, .delete-btn:hover{
+    cursor: pointer;
+}
